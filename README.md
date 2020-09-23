@@ -1,10 +1,13 @@
 # DEA_Project_NSBM
 
 
+
 LIBRARY MANAGEMENT SYSTEM 
 
 
+
 INTRODUCTION
+
 
 
 -	Our Web Application is about Library Management System and we covered major area like java server pages, Servlets, Java beans, and JDBC.
@@ -19,7 +22,9 @@ INTRODUCTION
 
 
 
+
 OBJECTIVES 
+
 
 
 -	Our object is to handle the entire activity inside the library.
@@ -28,7 +33,9 @@ OBJECTIVES
 
 
 
+
 USE CASE DIAGRAM 
+
 
 
 
@@ -36,7 +43,9 @@ USE CASE DIAGRAM
 
 
 
+
 ER DIAGRAM
+
 
 
 ![er](https://user-images.githubusercontent.com/60148897/94022962-470a3700-fdd3-11ea-9d04-3c6314d64245.png)
@@ -44,13 +53,17 @@ ER DIAGRAM
 
 
 
+
 1.LOGIN PAGE 
+
 
 
 If the user register as a staff member, he or she can login to the system.
 
 
+
 ![1](https://user-images.githubusercontent.com/60148897/94019289-3952b280-fdcf-11ea-8038-14c72298c82f.png)
+
 
 
 
@@ -58,10 +71,14 @@ If the user register as a staff member, he or she can login to the system.
 
 
 
+
+
 If the user didn’t register as the staff member he or she must sign in as the staff member.
 
 
+
 ![JSP Page_page-0001](https://user-images.githubusercontent.com/60148897/94019657-a8300b80-fdcf-11ea-8d01-f59b8260f615.jpg)
+
 
 
 
@@ -70,38 +87,49 @@ If the user didn’t register as the staff member he or she must sign in as the 
 
 
 
+
 After login to the system, this is the page that user see.
+
 
 
 ![Untitled](https://user-images.githubusercontent.com/60148897/94019788-cf86d880-fdcf-11ea-99fa-c396fa818ad3.png)
 
 
 
+
 4.REGISTER NEW BOOK PAGE 
+
 
 
 ![3](https://user-images.githubusercontent.com/60148897/94019857-e0cfe500-fdcf-11ea-91f3-a7a8c1a66106.png)
 
 
 
+
 5. MEMBER REGISTRATION PAGE 
+
 
 
 ![memreg_page-0001](https://user-images.githubusercontent.com/60148897/94019957-f7763c00-fdcf-11ea-81e5-b8f23369ed68.jpg)
 
 
 
+
 6.ISSUE BOOK PAGE
+
 
 
 ![Borrow Book_page-0001](https://user-images.githubusercontent.com/60148897/94020171-3efcc800-fdd0-11ea-82c6-1915615f1116.jpg)
 
 
 
+
 7.RETURN BOOK PAGE
 
 
+
 ![4](https://user-images.githubusercontent.com/60148897/94020278-5fc51d80-fdd0-11ea-914b-02aad36a3838.png)
+
 
 
 
@@ -110,7 +138,9 @@ After login to the system, this is the page that user see.
 
 
 
+
 ![6](https://user-images.githubusercontent.com/60148897/94020571-aca8f400-fdd0-11ea-9a6c-3b4c5a95328f.png)
+
 
 
 
@@ -119,7 +149,9 @@ After login to the system, this is the page that user see.
 
 
 
+
 ![11](https://user-images.githubusercontent.com/60148897/94020652-cb0eef80-fdd0-11ea-996f-147a398c3e95.png)
+
 
 
 
@@ -133,7 +165,10 @@ After login to the system, this is the page that user see.
 
 
 
+
 11.BOOK CATEGORY DATA IN THE DATABASE
+
+
 
 
 
@@ -142,11 +177,14 @@ After login to the system, this is the page that user see.
 
 
 
+
 12.MAMBER TABLE IN THE DATABASE
 
 
 
+
 ![94](https://user-images.githubusercontent.com/60148897/94020952-1a552000-fdd1-11ea-9299-ce674855600e.png)
+
 
 
 
@@ -160,11 +198,15 @@ After login to the system, this is the page that user see.
 
 
 
+
+
 14.STAFF TABLE IN THE DATABASE
 
 
 
+
 ![42](https://user-images.githubusercontent.com/60148897/94021109-496b9180-fdd1-11ea-99bf-541d433c0846.png)
+
 
 
 
@@ -178,7 +220,10 @@ After login to the system, this is the page that user see.
 
 
 
+
+
 16.MEMBER HAS BOOK TABLE IN THE DATABASE
+
 
 
 
@@ -187,7 +232,9 @@ After login to the system, this is the page that user see.
 
 
 
+
 17.MEMBER HAS BOOK DATA IN THE DATABASE
+
 
 
 
@@ -196,7 +243,9 @@ After login to the system, this is the page that user see.
 
 
 
+
 TECHNOLOGISE USED –
+
 
 
 -	MYSQL WORKBENCH 
@@ -206,7 +255,9 @@ TECHNOLOGISE USED –
 
 
 
+
 LANGUAGES WE USED -
+
 
 
 -	HTML & CSS
@@ -217,10 +268,14 @@ LANGUAGES WE USED -
 
 
 
+
 METHODS WE USED – 
+
 
 
 -	SESSION& COOKIES
 -	GETTERS AND SETTERS 
 -	GET & POST 
 -	PROCESS REQUIEST SO ON.
+
+
