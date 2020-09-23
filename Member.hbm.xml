@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 22, 2020 7:07:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Database.Member" table="member" catalog="libry" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="45" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" length="45" />
+        </property>
+        <property name="nic" type="string">
+            <column name="nic" length="45" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="13" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="150" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="10" />
+        </property>
+        <property name="dateJoin" type="string">
+            <column name="date_join" length="45" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="250" />
+        </property>
+        <set name="books" table="book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="member_id" not-null="true" />
+            </key>
+            <one-to-many class="Database.Book" />
+        </set>
+        <set name="memberHasBooks" table="member_has_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="member_id" not-null="true" />
+            </key>
+            <one-to-many class="Database.MemberHasBook" />
+        </set>
+    </class>
+</hibernate-mapping>
