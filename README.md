@@ -7,14 +7,14 @@ LIBRARY MANAGEMENT SYSTEM
 INTRODUCTION
 
 
--	Our Enterprise Application is about Library Management System and we covered major area like java server pages, Servlets, Java beans, and JDBC.
--	We develop our application using NETBEAN 8.2 Version.
+-	Our Web Application is about Library Management System and we covered major area like java server pages, Servlets, Java beans, and JDBC.
+-	We develop our application using NETBEANS 8.2 Version.
 -	We used session via cookies.
--	In this application we have provide users to add book, search book, issue book, return book, view books and we have provided login and signup from to staff to login in to the page and logout to leave the page.
+-	In this application we have provide users to register member, add book, search book, issue book, return book, view books and we have provided login and signup from to staff to login in to the page and logout to leave the page.
 -	And we included form to register member details to issue books. 
 -	We designed database using MYSQL workbench.
--	 We used MVC design pattern to design this application.
--	We used Hibernate (a Java framework) to interact with the database.
+-	We used MVC design pattern to design this application.
+-	We used Hibernate which is a Java framework to interact with the database.
 -	We used HeidiSQL to browse and edit data, create and edit tables, views, procedures, triggers and scheduled events.
 
 
@@ -58,7 +58,7 @@ If the user register as a staff member, he or she can login to the system.
 
 
 
-If the user didn’t register as the staff member he or she must sign as the staff member.
+If the user didn’t register as the staff member he or she must sign in as the staff member.
 
 
 ![JSP Page_page-0001](https://user-images.githubusercontent.com/60148897/94019657-a8300b80-fdcf-11ea-8d01-f59b8260f615.jpg)
@@ -70,14 +70,14 @@ If the user didn’t register as the staff member he or she must sign as the sta
 
 
 
-After login in to the system, this is the page that user see.
+After login to the system, this is the page that user see.
 
 
 ![Untitled](https://user-images.githubusercontent.com/60148897/94019788-cf86d880-fdcf-11ea-99fa-c396fa818ad3.png)
 
 
 
-4.REGISTER NEW BOOK 
+4.REGISTER NEW BOOK PAGE 
 
 
 ![3](https://user-images.githubusercontent.com/60148897/94019857-e0cfe500-fdcf-11ea-91f3-a7a8c1a66106.png)
@@ -91,14 +91,14 @@ After login in to the system, this is the page that user see.
 
 
 
-6.ISSUE BOOK
+6.ISSUE BOOK PAGE
 
 
 ![Borrow Book_page-0001](https://user-images.githubusercontent.com/60148897/94020171-3efcc800-fdd0-11ea-82c6-1915615f1116.jpg)
 
 
 
-7.RETURN BOOK
+7.RETURN BOOK PAGE
 
 
 ![4](https://user-images.githubusercontent.com/60148897/94020278-5fc51d80-fdd0-11ea-914b-02aad36a3838.png)
@@ -115,7 +115,7 @@ After login in to the system, this is the page that user see.
 
 
 
-9.BOOK DATA IN THE DATABASE
+9.DATA OF BOOKS IN THE DATABASE
 
 
 
