@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 22, 2020 7:07:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Database.Book" table="book" catalog="libry" optimistic-lock="version">
+        <id name="bookCode" type="string">
+            <column name="book_code" length="45" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="bookCategory" class="Database.BookCategory" fetch="select">
+            <column name="book_category_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="member" class="Database.Member" fetch="select">
+            <column name="member_id" not-null="true" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="200" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="200" />
+        </property>
+        <property name="status" type="java.lang.Boolean">
+            <column name="status" />
+        </property>
+        <set name="memberHasBooks" table="member_has_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="book_code" length="45" not-null="true" />
+            </key>
+            <one-to-many class="Database.MemberHasBook" />
+        </set>
+    </class>
+</hibernate-mapping>
