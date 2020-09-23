@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 22, 2020 7:07:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Database.MemberHasBook" table="member_has_book" catalog="libry" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="book" class="Database.Book" fetch="select">
+            <column name="book_code" length="45" not-null="true" />
+        </many-to-one>
+        <many-to-one name="member" class="Database.Member" fetch="select">
+            <column name="member_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="staff" class="Database.Staff" fetch="select">
+            <column name="staff_id" not-null="true" />
+        </many-to-one>
+        <property name="dateIssue" type="string">
+            <column name="date_issue" length="45" />
+        </property>
+        <property name="dateReturn" type="string">
+            <column name="date_return" length="45" />
+        </property>
+        <property name="isReurned" type="java.lang.Boolean">
+            <column name="isReurned" />
+        </property>
+    </class>
+</hibernate-mapping>
